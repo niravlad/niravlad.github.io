@@ -114,6 +114,25 @@ const projectDatabase = {
     ],
     tech: ["Power BI", "DAX", "SQL Server", "ETL Jobs", "Crystal Reports", "RDLC", "C#"],
     impact: "Provided executive leadership with single-pane-of-glass institutional metrics and saved over 120 staff hours every month."
+  },
+  7: {
+    id: 7,
+    title: "Tax Consultancy & Corporate Accounting Portal",
+    client: "Sandeep Mistry & Associates",
+    liveUrl: "https://smassociates.info/",
+    category: "fullstack",
+    categoryLabel: "Corporate Web App & Financial Portal",
+    summary: "Architected and delivered the official corporate web application for Sandeep Mistry & Associates (https://smassociates.info/), a premier tax consultancy and accounting firm in Surat, Gujarat.",
+    problem: "The firm required a modern, responsive, and search-optimized digital web platform to showcase GST registration, corporate auditing, tax advisory, and automated consultation scheduling.",
+    solution: "Designed and engineered an ultra-fast responsive web portal integrated with Schema.org JSON-LD structured data for local accounting search dominance, interactive service catalog modules, and direct inquiry routing.",
+    architecture: [
+      "Modern mobile-first responsive web design with interactive service discovery",
+      "Schema.org AccountingService JSON-LD microdata integration for search visibility",
+      "Direct client lead routing with WhatsApp API and email notifications",
+      "Optimized static asset delivery achieving sub-second load times and 95+ Google Lighthouse scores"
+    ],
+    tech: ["HTML5", "CSS3", "JavaScript", "Responsive UI", "Schema.org SEO", "Lead Capture", "FinTech"],
+    impact: "Delivered 100% cross-device compatibility, streamlined client inquiries for GST and auditing services, and established the firm's primary digital web presence."
   }
 };
 
@@ -303,6 +322,24 @@ function populateProjectModal(project) {
 
   const techContainer = document.getElementById("modalProjectTech");
   techContainer.innerHTML = project.tech.map(t => `<span class="skill-tag highlight">${t}</span>`).join("");
+
+  const modalFooter = document.querySelector(".modal-footer");
+  let liveBtn = document.getElementById("modalLiveSiteBtn");
+  if (project.liveUrl) {
+    if (!liveBtn) {
+      liveBtn = document.createElement("a");
+      liveBtn.id = "modalLiveSiteBtn";
+      liveBtn.className = "btn btn-emerald btn-sm";
+      liveBtn.target = "_blank";
+      liveBtn.rel = "noopener noreferrer";
+      modalFooter.prepend(liveBtn);
+    }
+    liveBtn.href = project.liveUrl;
+    liveBtn.innerHTML = '<i class="fas fa-external-link-alt"></i> Visit Live Website';
+    liveBtn.style.display = "inline-flex";
+  } else if (liveBtn) {
+    liveBtn.style.display = "none";
+  }
 }
 
 // Skills Category Tabs (Optional filtering or highlighting)

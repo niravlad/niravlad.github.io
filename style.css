@@ -1396,6 +1396,28 @@ img {
   color: #fff;
 }
 
+.btn-live-project {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-emerald);
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.btn-live-project:hover {
+  background: var(--accent-emerald);
+  color: #042f2e;
+  border-color: var(--accent-emerald);
+  transform: translateY(-1px);
+}
+
 /* --------------------------------------------------------------------------
    Certifications & Education Section
    -------------------------------------------------------------------------- */
