@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nirav Lad - Executive Resume | Senior .NET & SQL Developer</title>
+  <meta name="description" content="Resume of Nirav Lad - Accomplished .NET Full Stack and SQL Developer with 12+ years experience in C#, ASP.NET, .NET Core, SQL Server, PostgreSQL, React.js, ETL & Reporting.">
+  <meta name="author" content="Nirav Lad">
+  
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       RESUME DEDICATED STYLESHEET
+       ========================================================================== */
+    :root {
+      --primary: #0f172a;
+      --accent: #0284c7;
+      --accent-dark: #0369a1;
+      --accent-emerald: #059669;
+      --text: #1e293b;
+      --text-muted: #475569;
+      --text-light: #64748b;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      font-size: 14px;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 60px;
+    }
+
+    /* Top Action Bar (hidden on print) */
+    .action-bar {
+      position: sticky;
+      top: 0;
+      background: #0f172a;
+      color: #fff;
+      padding: 12px 24px;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .action-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .action-badge {
+      background: var(--accent);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-family: var(--mono);
+      letter-spacing: 0.5px;
+    }
+
+    .action-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-print {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .btn-print:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-back {
+      background: rgba(255, 255, 255, 0.1);
+      color: #f1f5f9;
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-back:hover {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    /* Resume Document Wrapper */
+    .resume-wrapper {
+      max-width: 960px;
+      margin: 30px auto 0;
+      background: var(--card-bg);
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    /* Resume Header */
+    .resume-header {
+      background: #0f172a;
+      color: #fff;
+      padding: 36px 40px;
+      border-bottom: 4px solid var(--accent);
+    }
+
+    .header-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .candidate-name {
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+
+    .candidate-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #38bdf8;
+      margin-bottom: 12px;
+    }
+
+    .target-role-pill {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: #e0f2fe;
+      font-size: 0.85rem;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .contact-details-box {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 12px 18px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .contact-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .contact-line i {
+      color: #38bdf8;
+      width: 16px;
+      text-align: center;
+    }
+
+    .contact-line a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contact-line a:hover {
+      color: #38bdf8;
+      text-decoration: underline;
+    }
+
+    /* Resume Body Grid (2 Columns: Left Sidebar & Right Main) */
+    .resume-body {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      min-height: 1000px;
+    }
+
+    /* Left Sidebar */
+    .resume-sidebar {
+      background: #f8fafc;
+      border-right: 1px solid var(--border);
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    /* Main Content Column */
+    .resume-main {
+      padding: 32px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    /* Section Headers */
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--primary);
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title i {
+      color: var(--accent);
+      font-size: 0.95rem;
+    }
+
+    /* Profile Summary */
+    .summary-text {
+      color: var(--text);
+      font-size: 0.92rem;
+      line-height: 1.65;
+      text-align: justify;
+    }
+
+    /* Core Competencies Badges */
+    .competencies-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .competency-tag {
+      background: #e2e8f0;
+      color: #0f172a;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 4px;
+      border-left: 3px solid var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Sidebar Skills Categories */
+    .skill-block {
+      margin-bottom: 16px;
+    }
+
+    .skill-block-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent-dark);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .skill-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .skill-pill {
+      font-size: 0.76rem;
+      font-weight: 500;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      padding: 3px 8px;
+      border-radius: 3px;
+      color: #1e293b;
+    }
+
+    .skill-pill.highlight {
+      background: #e0f2fe;
+      border-color: #7dd3fc;
+      color: #0369a1;
+      font-weight: 600;
+    }
+
+    /* Education & Certs in Sidebar */
+    .edu-card {
+      margin-bottom: 14px;
+    }
+
+    .edu-degree {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--primary);
+      margin-bottom: 2px;
+    }
+
+    .edu-school {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+
+    .edu-years {
+      font-size: 0.75rem;
+      font-family: var(--mono);
+      color: var(--accent-dark);
+      font-weight: 600;
+    }
+
+    .cert-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 0.82rem;
+      line-height: 1.4;
+      color: var(--text);
+    }
+
+    .cert-item i {
+      color: var(--accent-emerald);
+      margin-top: 3px;
+      font-size: 0.8rem;
+    }
+
+    /* Experience Timeline Entries */
+    .experience-entry {
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .experience-entry:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .exp-role {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .exp-company {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--accent-dark);
+    }
+
+    .exp-period {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--accent-emerald);
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      padding: 3px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-top: 8px;
+    }
+
+    .exp-bullets li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .exp-bullets li i {
+      color: var(--accent);
+      font-size: 0.75rem;
+      margin-top: 5px;
+      flex-shrink: 0;
+    }
+
+    /* Print Optimization Rules */
+    @media print {
+      body {
+        background: #ffffff;
+        padding-bottom: 0;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .resume-wrapper {
+        margin: 0;
+        box-shadow: none;
+        border: none;
+        max-width: 100%;
+        border-radius: 0;
+      }
+
+      .resume-header {
+        background: #0f172a !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        padding: 24px 30px;
+      }
+
+      .candidate-name {
+        font-size: 2rem;
+        color: #ffffff !important;
+      }
+
+      .candidate-title {
+        color: #38bdf8 !important;
+      }
+
+      .resume-body {
+        grid-template-columns: 260px 1fr;
+      }
+
+      .resume-sidebar {
+        background: #f8fafc !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        padding: 20px 18px;
+        gap: 20px;
+      }
+
+      .resume-main {
+        padding: 20px 24px;
+        gap: 20px;
+      }
+
+      .experience-entry {
+        page-break-inside: avoid;
+        margin-bottom: 18px;
+        padding-bottom: 14px;
+      }
+
+      .exp-period {
+        background: #ecfdf5 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .competency-tag {
+        background: #f1f5f9 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .resume-body {
+        grid-template-columns: 1fr;
+      }
+      .resume-sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+      .resume-header {
+        padding: 24px 20px;
+      }
+      .resume-main {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Bar (Screen Only) -->
+  <div class="action-bar">
+    <div class="action-left">
+      <span>NIRAV LAD &bull; OFFICIAL RESUME</span>
+      <span class="action-badge">12+ YEARS EXPERIENCE</span>
+    </div>
+
+    <div class="action-right">
+      <button class="btn btn-print" onclick="window.print();" id="btnPrintResume">
+        <i class="fas fa-print"></i> Print / Save as PDF
+      </button>
+      <a href="index.html" class="btn btn-back">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+  </div>
+
+  <!-- Printable Resume Document -->
+  <div class="resume-wrapper">
+
+    <!-- Header Section -->
+    <header class="resume-header">
+      <div class="header-top-row">
+        <div>
+          <h1 class="candidate-name">NIRAV LAD</h1>
+          <div class="candidate-title">Senior .NET Full Stack, Azure &amp; SQL Developer</div>
+          <div class="target-role-pill">
+            <i class="fas fa-bullseye"></i> Seeking: Cloud Data Architect / GitHub Actions &amp; DevOps Specialist / .NET Backend Developer / Sr. SQL Developer
+          </div>
+        </div>
+
+        <div class="contact-details-box">
+          <div class="contact-line">
+            <i class="fas fa-phone-alt"></i>
+            <span>+91-9725674245</span>
+          </div>
+          <div class="contact-line">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:ladnirav35@gmail.com">ladnirav35@gmail.com</a>
+          </div>
+          <div class="contact-line">
+            <i class="fas fa-globe"></i>
+            <a href="https://niravlad.com" target="_blank">niravlad.com</a>
+          </div>
+          <div class="contact-line">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>India (Available for US Remote Roles)</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2-Column Body Layout -->
+    <div class="resume-body">
+
+      <!-- Left Column: Core Competencies, Skills, Education, Certifications -->
+      <aside class="resume-sidebar">
+
+        <!-- Core Competencies -->
+        <div>
+          <h2 class="section-title"><i class="fas fa-cubes"></i> Core Competencies</h2>
+          <ul class="competencies-list">
+            <li class="competency-tag">Full-Stack Application Development</li>
+            <li class="competency-tag">Backend Architecture &amp; API Design</li>
+            <li class="competency-tag">Cloud Database &amp; Azure SQL</li>
+            <li class="competency-tag">GitHub Actions &amp; CI/CD Pipelines</li>
+            <li class="competency-tag">Frontend Dev &amp; Responsive UI</li>
+            <li class="competency-tag">ETL &amp; Data Integration (ADF)</li>
+            <li class="competency-tag">Reporting &amp; Business Intelligence</li>
+            <li class="competency-tag">Agile/Scrum Project Delivery</li>
+            <li class="competency-tag">Code Review &amp; Quality Assurance</li>
+            <li class="competency-tag">Cross-Functional Collaboration</li>
+            <li class="competency-tag">Software Development Lifecycle</li>
+          </ul>
+        </div>
+
+        <!-- Technical Skills Breakdown -->
+        <div>
+          <h2 class="section-title"><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+
+          <div class="skill-block">
+            <div class="skill-block-title">Cloud &amp; Azure Ecosystem</div>
+            <div class="skill-pills">
+              <span class="skill-pill highlight">Azure SQL Database</span>
+              <span class="skill-pill highlight">GitHub Actions (CI/CD)</span>
+              <span class="skill-pill highlight">Azure Data Factory (ADF)</span>
+              <span class="skill-pill">Azure SQL Managed Instance</span>
+              <span class="skill-pill">Azure App Service</span>
+              <span class="skill-pill">Azure Blob Storage</span>
+              <span class="skill-pill">Azure Functions</span>
+              <span class="skill-pill">Cloud Migration</span>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-block-title">.NET &amp; Backend</div>
+            <div class="skill-pills">
+              <span class="skill-pill highlight">C#</span>
+              <span class="skill-pill highlight">.NET Core</span>
+              <span class="skill-pill highlight">ASP.NET MVC</span>
+              <span class="skill-pill">Web API</span>
+              <span class="skill-pill">Entity Framework</span>
+              <span class="skill-pill">LINQ</span>
+              <span class="skill-pill">REST / SOAP</span>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-block-title">Database &amp; SQL</div>
+            <div class="skill-pills">
+              <span class="skill-pill highlight">SQL Server</span>
+              <span class="skill-pill highlight">PostgreSQL</span>
+              <span class="skill-pill">Oracle PL/SQL</span>
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">MongoDB</span>
+              <span class="skill-pill highlight">Stored Procedures</span>
+              <span class="skill-pill">Triggers &amp; Views</span>
+              <span class="skill-pill highlight">Query Tuning</span>
+              <span class="skill-pill">Indexing</span>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-block-title">Data Engineering &amp; ETL</div>
+            <div class="skill-pills">
+              <span class="skill-pill highlight">ETL Pipeline Design</span>
+              <span class="skill-pill highlight">Automated Workflows</span>
+              <span class="skill-pill">Data Migration</span>
+              <span class="skill-pill">Data Integration</span>
+              <span class="skill-pill">Large Datasets</span>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-block-title">Frontend &amp; UI</div>
+            <div class="skill-pills">
+              <span class="skill-pill highlight">React.js</span>
+              <span class="skill-pill highlight">JavaScript (ES6+)</span>
+              <span class="skill-pill">jQuery</span>
+              <span class="skill-pill">HTML5 &amp; CSS3</span>
+              <span class="skill-pill">Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-block-title">Reporting &amp; BI</div>
+            <div class="skill-pills">
+              <span class="skill-pill highlight">Power BI</span>
+              <span class="skill-pill highlight">Crystal Reports</span>
+              <span class="skill-pill">RDLC Reports</span>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-block-title">Tools, CI/CD &amp; Practices</div>
+            <div class="skill-pills">
+              <span class="skill-pill highlight">GitHub Actions</span>
+              <span class="skill-pill">Visual Studio</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Git / TFS / SVN</span>
+              <span class="skill-pill">Agile/Scrum</span>
+              <span class="skill-pill">OOP</span>
+              <span class="skill-pill">SDLC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academia & Education -->
+        <div>
+          <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+          <div class="edu-card">
+            <div class="edu-degree">Bachelor of Engineering (B.E.)</div>
+            <div class="edu-school">Information Technology</div>
+            <div class="edu-school">Chhotubhai Gopalbhai Patel Institute of Technology</div>
+            <div class="edu-years">2009 &ndash; 2013</div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div>
+          <h2 class="section-title"><i class="fas fa-certificate"></i> Certifications</h2>
+          
+          <div class="cert-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>SQL for Data Science</strong><br>
+              <span style="font-size:0.75rem; color:var(--text-muted);">Coursera</span>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>HTML, CSS &amp; JavaScript for Web Developers</strong><br>
+              <span style="font-size:0.75rem; color:var(--text-muted);">Coursera</span>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>Web Design for Everybody</strong><br>
+              <span style="font-size:0.75rem; color:var(--text-muted);">Coursera</span>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- Right Column: Profile Summary & Work Experience -->
+      <main class="resume-main">
+
+        <!-- Profile Summary -->
+        <section>
+          <h2 class="section-title"><i class="fas fa-user-tie"></i> Profile Summary</h2>
+          <p class="summary-text">
+            An accomplished <strong>.NET Full Stack, Cloud and SQL Developer with over 12 years of hands-on experience</strong> in building scalable, secure, and high-performance applications, currently driving enterprise database solutions and cloud workflows at <strong>InfuCare Rx Inc. (USA) as Sr. SQL Developer</strong>. Expertise spans <strong>C#, ASP.NET, ASP.NET MVC, .NET Core, Web API, Entity Framework, LINQ, JavaScript, jQuery, HTML5, CSS3, Bootstrap, React.js</strong>, and advanced database engineering with <strong>SQL Server, Azure SQL Database, Azure SQL Managed Instance, PostgreSQL, Oracle PL/SQL, MySQL, and MongoDB</strong>. Proven mastery in <strong>GitHub Actions (CI/CD workflows)</strong>, <strong>Azure Data Factory (ADF)</strong>, ETL design, REST/SOAP API integration, Power BI &amp; Crystal/RDLC reporting, performance tuning, and Agile-driven project delivery. Strong track record in mentoring teams, automating deployments, leading Agile initiatives, optimizing workflows, and translating complex business requirements into seamless cloud-ready technical solutions.
+          </p>
+        </section>
+
+        <!-- Work Experience -->
+        <section>
+          <h2 class="section-title"><i class="fas fa-briefcase"></i> Professional Work Experience</h2>
+
+          <!-- Role 1: InfuCare Rx Inc. -->
+          <article class="experience-entry">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">Sr. SQL Developer</div>
+                <div class="exp-company">InfuCare Rx Inc. (USA) &bull; Remote Healthcare</div>
+              </div>
+              <div class="exp-period">Apr 2024 &ndash; Present</div>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Architect and maintain high-performance SQL databases and <strong>Azure SQL Managed Instances</strong> for enterprise healthcare systems, ensuring robust scalability and data reliability.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Create and optimize advanced stored procedures, triggers, views, and functions, driving efficient data processing and operational excellence.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Conduct query performance tuning, indexing strategies, and execution plan optimization for large-scale healthcare datasets, enhancing system responsiveness.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Design and implement automated ETL workflows using <strong>Azure Data Factory (ADF)</strong> and SSIS for seamless cloud data integration, migration, and reporting across multiple EHR platforms.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Build and manage automated <strong>GitHub Actions CI/CD workflows</strong> for database schema deployments (DACPAC / SSDT) and scheduled cloud data jobs.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Partner with cross-functional teams, including developers, QA, and analysts, to shape database architecture, cloud data governance, and HIPAA-compliant data security standards.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Role 2: Lynx Softech -->
+          <article class="experience-entry">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">Sr. Software Developer</div>
+                <div class="exp-company">Lynx Softech &bull; B2B Diamond Trading Platform</div>
+              </div>
+              <div class="exp-period">Jul 2022 &ndash; Mar 2024</div>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Led the development of the Diamond Market Portal using PostgreSQL, React.js, and .NET Core API, ensuring scalable, high-performance functionality.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Designed and implemented ASP.NET MVC, .NET Core, and C# applications, delivering robust backend solutions and seamless frontend integration.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Implemented <strong>GitHub Actions CI/CD build &amp; release workflows</strong> for automated testing and zero-downtime deployment to Azure App Services.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Developed and integrated REST APIs and third-party services, enhancing application interoperability and user experience.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Actively participated in Agile ceremonies, code reviews, and cross-functional collaboration, driving process improvements and timely project delivery.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Role 3: Uka Tarsadia University -->
+          <article class="experience-entry">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">Programmer / Lead Application Developer</div>
+                <div class="exp-company">Uka Tarsadia University &bull; Institutional Systems</div>
+              </div>
+              <div class="exp-period">Mar 2016 &ndash; Jun 2022</div>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Developed ASP.NET MVC and C# applications with responsive UI, implementing REST/SOAP services and secure authentication mechanisms.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Designed, optimized, and maintained SQL Server databases, including procedures, indexing, and performance tuning for large datasets.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Created Power BI, Crystal Reports, and RDLC reports, automating data workflows and improving reporting efficiency.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Collaborated with business and technical teams to translate requirements into scalable solutions, ensuring project alignment with organizational goals.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Role 4: Ramdev Infosystem -->
+          <article class="experience-entry">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">Software Developer</div>
+                <div class="exp-company">Ramdev Infosystem</div>
+              </div>
+              <div class="exp-period">Jan 2016 &ndash; Mar 2016</div>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Delivered full-stack .NET applications using ASP.NET, C#, and SQL Server, with secure database structures and modular business logic.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Implemented best practices for application performance, database integrity, and maintainability.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Role 5: Shri Web Solution -->
+          <article class="experience-entry">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">Web Developer</div>
+                <div class="exp-company">Shri Web Solution</div>
+              </div>
+              <div class="exp-period">Sep 2014 &ndash; Dec 2015</div>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Developed dynamic ASP.NET applications using C#, HTML, CSS, JavaScript, and jQuery with responsive UI design.</span>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i>
+                <span>Performed cross-browser testing and optimized front-end performance for enhanced user experience &amp; assisted in refining development processes, contributing to faster delivery cycles and improved code quality.</span>
+              </li>
+            </ul>
+          </article>
+
+        </section>
+
+      </main>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
