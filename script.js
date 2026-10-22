@@ -133,6 +133,26 @@ const projectDatabase = {
     ],
     tech: ["HTML5", "CSS3", "JavaScript", "Responsive UI", "Schema.org SEO", "Lead Capture", "FinTech"],
     impact: "Delivered 100% cross-device compatibility, streamlined client inquiries for GST and auditing services, and established the firm's primary digital web presence."
+  },
+  8: {
+    id: 8,
+    title: "Enterprise Office Management & GST Compliance Cloud ERP",
+    client: "Sandeep Mistry & Associates (Confidential Internal ERP)",
+    category: "fullstack",
+    categoryLabel: "MERN Stack Enterprise ERP (Vercel & MongoDB)",
+    summary: "Architected and engineered the full-stack office management and GST compliance ERP system built with the MERN stack (MongoDB, Express, React, Node.js) and deployed on Vercel, managing 100+ active corporate client accounts, staff access, and tax return lifecycles.",
+    problem: "Accounting and tax consultancy workflows relied on manual spreadsheets and disparate records, leading to delayed GSTR-1/3B filing tracking, lack of client onboarding audits, and difficult task prioritization across staff.",
+    solution: "Built a centralized cloud ERP using the MERN stack deployed on Vercel with MongoDB. Integrated dynamic GSTR-1 and GSTR-3B compliance registries, a 4-step wizard for client onboarding, role-based employee access (SUPER_ADMIN, Staff, Consultant), Excel export, and real-time filing status dashboards.",
+    architecture: [
+      "MERN Architecture: React.js SPA frontend paired with Express & Node.js backend services deployed on Vercel serverless edge infrastructure",
+      "MongoDB NoSQL database with flexible document schemas for client firms, return filing registries, and employee profiles",
+      "Comprehensive GST compliance module for GSTR-1, GSTR-3B, amendments, and document repository",
+      "Multi-step client management wizard (Firm Info, Service Mapping, Banking/ID, Review)",
+      "Role-Based Access Control (RBAC) with granular employee management and activity auditing",
+      "Enterprise security with data sanitization, privacy masking for confidential PAN/client records, and private network protection"
+    ],
+    tech: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js", "Vercel", "REST APIs", "GST Compliance", "RBAC Security"],
+    impact: "Managing 100+ active corporate client accounts, zero compliance filing deadline misses, automated GSTR-1/3B lifecycle tracking, and reduced client onboarding time by 75%."
   }
 };
 
